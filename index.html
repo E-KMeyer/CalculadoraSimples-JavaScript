@@ -1,0 +1,58 @@
+<html">
+<body>
+    <script>
+  var primeiroNumero = prompt("informe o primeiro número da sua operação")
+  while((!Number(primeiroNumero))){
+    alert("Xiiiii... você precisa digitar um número para continuar! ou fechar a janela ;D")
+  var primeiroNumero = prompt("informe o primeiro número da sua operação")
+}
+
+  var sinal = prompt("informe uma sinal para a operação ('+' '-' '/' '*')")
+  while(sinal != '+' && sinal != '-' && sinal !='/' && sinal != '*'){
+    alert('informe uma operação válida')
+  var sinal = prompt("informe uma sinal para a operação ('+' '-' '/' '*')")
+  }
+
+  var segundoNumero = prompt("informe o segundo número da sua operação")
+  while((!Number(segundoNumero))){
+    alert("Xiiiii... você precisa digitar um número para continuar! ou fechar a janela ;D")
+  var segundoNumero = prompt("informe o segundo número da sua operação")
+}
+
+primeiroNumero= parseInt(primeiroNumero)
+  segundoNumero= parseInt(segundoNumero)
+  resultado = 0
+
+  if(sinal == '+'){
+    resultado = primeiroNumero + segundoNumero
+  }else if(sinal == '-'){
+    resultado = primeiroNumero - segundoNumero
+  }else if(sinal == '*'){
+    resultado = primeiroNumero * segundoNumero
+  }else if(sinal == '/') {
+    resultado = primeiroNumero / segundoNumero
+  }
+
+  alert('o resultado é: ' + resultado)
+  window.location.reload();
+
+//Este código é uma simples calculadora, onde o usuário é solicitado a informar dois números e um sinal de operação, para então calcular o resultado.
+//A verificação para verificar se o que foi informado é um número ou não, é um diferencial.
+//primeira linha: cria uma variável para armazenar o primeiro número informado pelo usuário
+//segunda linha: enquanto o que o usuário informar não for um número, será informado que é necessário digitar um número e será pedido para ele informar novamente um número
+//terceira linha: cria uma variável para armazenar o sinal da operação
+//quarta linha: enquanto o sinal informado não for um dos sinais específicos, será informado que é necessário digitar um sinal válido e será pedido para ele informar novamente um sinal
+//quinta linha: cria uma variável para armazenar o segundo número informado pelo usuário
+//sexta linha: enquanto o que o usuário informar não for um número, será informado que é necessário digitar um número e será pedido para ele informar novamente um número
+//sétima linha: transforma o que o usuário informou em um número inteiro
+//oitava linha: transforma o que o usuário informou em um número inteiro
+//nona linha: cria uma variável para armazenar o resultado da operação
+//décima linha: se o sinal informado for +, fará uma soma entre os números informados
+//décima primeira linha: se o sinal informado for -, fará uma subtração entre os números informados
+//décima segunda linha: se o sinal informado for *, fará uma multiplicação entre os números informados
+//décima terceira linha: se o sinal informado for /, fará uma divisão entre os números informados
+//décima quarta linha: informa o resultado da operação
+//décima quinta linha: recarrega a página
+</script>
+</body>
+</html>
